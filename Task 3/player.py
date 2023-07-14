@@ -17,10 +17,6 @@ def display(maze, click, loc):
     cv2.circle(maze, [int(loc[1] + click.shape[1] // 2), int(loc[0] + click.shape[0] // 2)], 6,
                [0, 0, 255], -1)
     cv2.rectangle(maze, [int(loc[1]), int(loc[0])], [int(loc[1] + click.shape[1]), int(loc[0] + click.shape[0])], [0, 255, 0], 4)
-    cv2.imwrite(r"C:\Rwiju (From Desktop)\Passages, writing and documents\Academics\College, Oppurtunities, Foreign\IIT Kharagpur\Research Groups\ARK\Q3\Snapshot_red.png", click)
-    cv2.imwrite(
-        r"C:\Rwiju (From Desktop)\Passages, writing and documents\Academics\College, Oppurtunities, Foreign\IIT Kharagpur\Research Groups\ARK\Q3\map_identified.png",
-        maze)
 
     for i in range(10):
         cv2.imshow('map_identified', maze)
